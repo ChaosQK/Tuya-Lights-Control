@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Control</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <link rel='stylesheet' href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.cdnfonts.com/css/brain-wants" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/brain-wants');
+    </style>
+    <link rel='stylesheet' href="./css/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body style='background: url("./img/background.jpg")'>
+
+    <div class="light-div-parent">
+        <div id="color-circle">
+            <i class="mdi mdi-lightbulb-outline light"></i>
+        </div>
+        <div id="lightoff-text">LUMIÈRES ÉTEINTES</div>
+    </div>
+
+
+    <div class="main-sliders">
+        <div class="lumcon-sliders">
+            <div class="sliders" style="margin-bottom: 20px;">
+                <i class="ion-ios7-sunny luminosity"></i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="10" max="1000" value="1000" class="slider" id="luminosity-slider">
+                </div>
+                <div class="percent-value" id="luminosity-value">100%</div>
+            </div>
+            <div class="sliders">
+                <i class="ion-contrast contrast"></i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="0" max="1000" value="1000" class="slider" id="contrast-slider">
+                </div>
+                <div class="percent-value" id="contrast-value">100%</div>
+            </div>
+        </div>
+        <div class="rgb-sliders">
+            <div class="sliders" style="margin-bottom: 53px;">
+                <i class="letter">R</i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="0" max="255" value="255" class="slider" id="r-slider">
+                </div>
+                <div class="percent-value" id="r-value">255</div>
+            </div>
+            <div class="sliders" style="margin-bottom: 53px;">
+                <i class="letter">G</i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="g-slider">
+                </div>
+                <div class="percent-value" id="g-value">0</div>
+            </div>
+            <div class="sliders">
+                <i class="letter">B</i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="b-slider">
+                </div>
+                <div class="percent-value" id="b-value">0</div>
+            </div>
+        </div>
+
+        <!--<div class="white-sliders">
+            <div class="sliders" style="margin-bottom: 20px;">
+                <i class="ion-ios7-sunny luminosity"></i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="10" max="1000" value="1000" class="slider" id="luminosity-slider">
+                </div>
+                <div class="percent-value" id="luminosity-value">100%</div>
+            </div>
+            <div class="sliders">
+                <i class="ion-contrast contrast"></i>
+                <div class="slidecontainer" style="margin-left: 16px">
+                    <input type="range" min="0" max="1000" value="1000" class="slider" id="contrast-slider">
+                </div>
+                <div class="percent-value" id="contrast-value">100%</div>
+            </div>
+        </div>-->
+    </div>
+
+    <div class="color-picker">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-light check-white">
+                <input type="radio" name="options" id="white-input" autocomplete="off"> Blanc
+            </label>
+            <label class="btn btn-outline-light check-color">
+                <input type="radio" name="options" id="color-input" autocomplete="off"> Couleur
+            </label>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

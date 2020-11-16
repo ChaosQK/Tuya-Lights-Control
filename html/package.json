@@ -1,0 +1,31 @@
+{
+    "name": "tuya-led-node",
+    "version": "1.0.0",
+    "description": "Tuya LED controller for node-red",
+    "dependencies": {
+        "express": "^4.17.1",
+        "http": "0.0.1-security",
+        "socket.io": "^2.3.0",
+        "tuyapi": "github:codetheweb/tuyapi"
+    },
+    "node-red": {
+        "nodes": {
+            "tuya-led": "tuya-led.js"
+        }
+    },
+    "keywords": [
+        "node-red",
+        "led",
+        "controller",
+        "tuya"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "cajonKA",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cajonKA/tuya-led-controller-node.git"
+    },
+    "license": "Apache-2.0"
+}

@@ -1,0 +1,147 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.light-div-parent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}
+
+#color-circle {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.light {
+  font-size: 150px;
+  color: white;
+}
+
+#lightoff-text {
+    display: flex;
+    font-family: "Brain Wants", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-top: 50px;
+}
+
+.main-sliders {
+    position: absolute;
+    z-index: 99!important;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    margin-bottom: 5%;
+    opacity: 0;
+}
+
+.lumcon-sliders {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.rgb-sliders {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 138px;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.slidecontainer {
+    width: 300px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.luminosity {
+    font-size: 72px;
+    #height: 74px;
+    color: white;
+}
+
+.contrast {
+    #height: 55px;
+    font-size: 50px;
+    color: white;
+}
+
+.letter {
+    font-family: "Brain Wants", sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.percent-value {
+    font-family: "Brain Wants", sans-serif;
+    font-size: 26px;
+    margin-left: 16px;
+    margin-top: 2px;
+    color: white;
+}
+
+.color-picker {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16px;
+    left: 16px;
+    opacity: 0;
+}
