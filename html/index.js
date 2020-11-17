@@ -13,24 +13,24 @@ const server = app.listen(8333)
 const socketServer = require('socket.io').listen(server);
 
 const device = new TuyaAPI({
-  ip: '192.168.5.78',
-  id: '0006852398f4abd2624e',
-  key: '079c4c07d178f1eb',
-  productKey: 'oer8r2g6rpehj6h4',
+  ip: '192.168.5.**',
+  id: '**********************',
+  key: '***************',
+  productKey: '***************',
   version: 3.3});
 
 const device1 = new TuyaAPI({
-  ip: '192.168.5.95',
-  id: '0006852398f4abd262fe',
-  key: '9158ea614e3d9840',
-  productKey: 'oer8r2g6rpehj6h4',
+  ip: '192.168.5.**',
+  id: '**********************',
+  key: '***************',
+  productKey: '***************',
   version: 3.3});
 
 const device2 = new TuyaAPI({
-  ip: '192.168.5.56',
-  id: '0006852398f4abd26180',
-  key: 'd24f30b221defd59',
-  productKey: 'oer8r2g6rpehj6h4',
+  ip: '192.168.5.**',
+  id: '**********************',
+  key: '***************',
+  productKey: '***************',
   version: 3.3});
 
 device.find().then(() => {
