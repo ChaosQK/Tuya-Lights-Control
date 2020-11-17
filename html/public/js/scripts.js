@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var sock = io('http://192.168.5.51:8333');
+    var sock = io('http://192.168.5.**:8333');
 
     var type = '';
     var color = '';
